@@ -476,7 +476,7 @@ class FramedTable(TFrame):
     ttk.Label(UpperFrame, text='Enter the file name').grid(row=1, column=1, sticky='nsew', padx=5, pady=5)
     name = ttk.Entry(UpperFrame)
     name.grid(row=2, column=1, sticky='nsew', padx=5, pady=5)    
-    btn = ttk.Button(UpperFrame,text='reload', command=lambda: [ self.fileManager.CreateFile(name.get()), self.ReLoadDirectoryTable(), top.destroy()], padding=5)
+    btn = ttk.Button(UpperFrame,text='Create File', command=lambda: [ self.fileManager.CreateFile(name.get()), self.ReLoadDirectoryTable(), top.destroy()], padding=5)
     btn.grid(row=4, column=1, sticky='nsew', padx=5, pady=5)
     
     
