@@ -14,5 +14,3 @@ rename Sandbox.exe DrEase-Console.exe
 rmdir /s /q build
 rmdir /s /q dist
 del Sandbox.exe config.JSON Sandbox.spec
-
-PAUSE

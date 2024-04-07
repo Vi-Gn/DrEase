@@ -31,5 +31,3 @@ xcopy databases\ %directoryName%bin\databases\ /s /e /i
 popd
 
 endlocal
-
-PAUSE
