@@ -27,7 +27,8 @@ xcopy DrEase-Console.exe %directoryName%bin\ /i
 xcopy Themes\ %directoryName%bin\Themes\ /s /e /i
 xcopy Icon\ %directoryName%bin\Icon\ /s /e /i
 xcopy databases\ %directoryName%bin\databases\ /s /e /i
+xcopy Docs\ %directoryName%bin\Docs\ /s /e /i
 
 popd
-
+start  %directoryName%bin
 endlocal

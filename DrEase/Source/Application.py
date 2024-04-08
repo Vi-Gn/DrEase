@@ -29,6 +29,9 @@ from ConfigJSON import Config, EWINSTATE
 
 import gc
 
+import webbrowser
+
+
 class Application(TTk):
   _instance = None
   def __new__(cls, *args, **vargs) -> Self:
@@ -223,6 +226,7 @@ class Application(TTk):
         self.attributes('-fullscreen', True)
 
   def OpenDocumentation(self):
+    webbrowser.open(os.path.abspath("Docs/index.html"))
     filePath = 'readme.txt'
     try:
       os.startfile(filePath)
